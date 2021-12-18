@@ -148,7 +148,7 @@ const BASE_URL = 'https://www.youtube.com/premium'
       panel['icon'] = params.icon1
       panel['icon-color'] = params.color1
     } else {
-      panel['content'] = `节点送中 无广告且无法使用会员权益`
+      panel['content'] = `节点送中 无广告但无法使用会员权益`
       panel['icon'] = params.icon2
       panel['icon-color'] = params.color2
     }
