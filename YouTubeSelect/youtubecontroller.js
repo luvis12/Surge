@@ -144,11 +144,12 @@ const BASE_URL = 'https://www.youtube.com/premium'
     }
     
     if (isOK.includes(rootName) == true) {
-      panel['content'] = `节点Premium权益正常  地区：${regData[rootName]}`
+      panel['content'] = `节点Premium权益正常`
+      ##地区：${regData[rootName]}
       panel['icon'] = params.icon1
       panel['icon-color'] = params.color1
     } else {
-      panel['content'] = `节点无广告无会员权益  地区：${regData[rootName]}`
+      panel['content'] = `节点无广告无会员权益`
       panel['icon'] = params.icon2
       panel['icon-color'] = params.color2
     }
