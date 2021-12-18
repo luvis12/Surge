@@ -128,7 +128,7 @@ const BASE_URL = 'https://www.youtube.com/premium'
     if (newStatus === 2) {
       info = `已选定节点： ${rootName} | ${statusName(newStatus)} | ${reg}`
     } else if (statusData[rootName] == 1) {
-      info = `节点送中 无广告且无法使用会员权益`
+      info = `节点送中 无广告但无法使用会员权益`
     }
 
     $notification.post("YouTube檢測", info, "")
