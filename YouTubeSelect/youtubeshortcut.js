@@ -133,7 +133,7 @@ const BASE_URL = 'https://www.youtube.com/premium'
 
     
     
-    $notification.post("YouTube檢測", info, "")
+    $notification.post("YouTube检测", info, "")
 
 
     $done()
