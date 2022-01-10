@@ -46,16 +46,17 @@ Sub_info = script-name=Sub_info,update-interval=600
   }
 
   let now = new Date();
-  let year = now.getFullYear();
   let month = now.getMonth();
-  let today = now.getDate();
+  let year = now.getFullYear();
+  let today = now.getdate();
+
   let hour = now.getHours();
   let minutes = now.getMinutes();
   hour = hour > 9 ? hour : "0" + hour;
   minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    title: `${args.title} | ${year} ${month} ${today} ${hour} ${munites}`,
+    title: `${args.title} | ${hour}:${minutes}`,
     content: content.join("\n"),
     icon: args.icon || "airplane.circle",
     "icon-color": args.color || "#007aff",
